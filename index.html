@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vidutinių 6 mėnesio pajamų skaičiuoklė</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="description" content="Demonstrates some logic errors" />
+	<meta name="keywords" content="HTML, average, errors" />
+</head>
+<body>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<h1>Vidutinių pajamų skaičiuoklė per 6 pastaruosius mėnesius</h1>
+	<table class="pajamos">
+		<tr>
+			<th>Mėnuo</th>
+			<th>Pajamos</th>
+		</tr>
+
+		<tr>
+			<th><script type="text/javascript"> 
+				const monthNames = ["Sausis", "Vasaris", "Kovas", "Balandis", "Gegužė", "Birželis",
+				"Liepa", "Rugpjūtis", "Rugsėjis", "Spalis", "Lapkritis", "Gruodis"];
+
+				const d = new Date();
+				document.write(monthNames[d.getMonth()-6]);
+			</script>
+		</th>
+		<th> <form id="myform"><input type="number" id="num1">
+		</form></th>
+	</tr>
+	<tr>
+		<th><script type="text/javascript"> 
+			document.write(monthNames[d.getMonth()-5]);
+		</script></th>
+		<th><form id="myform"><input type="number" id="num2">
+		</form></th>
+	</tr>
+	<tr>
+		<th><script type="text/javascript"> 
+			document.write(monthNames[d.getMonth()-4]);
+		</script></th>
+		<th><form id="myform"><input type="number" id="num3">
+		</form></th>
+	</tr>
+	<tr>
+		<th><script type="text/javascript">
+			document.write(monthNames[d.getMonth()-3]);
+		</script></th>
+		<th><form id="myform"><input type="number" id="num4">
+		</form></th>
+	</tr>
+	<tr>
+		<th><script type="text/javascript"> 
+			document.write(monthNames[d.getMonth()-2]);
+		</script></th>
+		<th><form id="myform"><input type="number" id="num5">
+		</form></th>
+	</tr>
+	<tr>
+		<th><script type="text/javascript"> 
+			document.write(monthNames[d.getMonth()-1]);
+		</script></th>
+		<th><form id="myform"><input type="number" id="num6">
+		</form></th>
+	</tr>
+</table>
+	<input type="reset" name="reset" value="Išvalyti">
+	<button onclick="adder()"> Skaičiuoti</button><br>
+	<p>6 mėnesių pajamų vidurkis yra:<br> <p id="p1"></p></p>
+</body>
+</html>
