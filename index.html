@@ -5,13 +5,14 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<meta name="description" content="Demonstrates some logic errors" />
-	<meta name="keywords" content="HTML, average, errors" />
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ -->	<!-- <meta name="description" content="Demonstrates some logic errors" />
+	<meta name="keywords" content="HTML, average, errors" /> -->
 </head>
 <body>
-	<script type="text/javascript" src="scripts/script.js"></script>
-	<h1>Vidutinių pajamų skaičiuoklė per 6 pastaruosius mėnesius</h1>
+		<script type="text/javascript" src="scripts/script.js"></script>
+
+	<h1>Vidutinių pajamų skaičiuoklė</h1>
 	<table class="pajamos">
 		<tr>
 			<th>Mėnuo</th>
@@ -27,47 +28,66 @@
 				document.write(monthNames[d.getMonth()-6]);
 			</script>
 		</th>
-		<th> <form id="myform"><input type="number" id="num1">
-		</form></th>
+		<th><form id="myform"><input type="number" id="1" value="0"><br>
+		<input type="number" id="2" value="0"><br>
+		<input type="number" id="3" value="0"><br>
+		<input type="number" id="4" value="0">
+		</th>
 	</tr>
 	<tr>
 		<th><script type="text/javascript"> 
 			document.write(monthNames[d.getMonth()-5]);
 		</script></th>
-		<th><form id="myform"><input type="number" id="num2">
-		</form></th>
+		<th><input type="number" id="5" value="0"><br>
+		<input type="number" id="6" value="0"><br>
+		<input type="number" id="7" value="0"><br>
+		<input type="number" id="8" value="0">
+		</th>
 	</tr>
 	<tr>
 		<th><script type="text/javascript"> 
 			document.write(monthNames[d.getMonth()-4]);
 		</script></th>
-		<th><form id="myform"><input type="number" id="num3">
-		</form></th>
+		<th><input type="number" id="9" value="0"><br>
+		<input type="number" id="10" value="0"><br>
+		<input type="number" id="11" value="0"><br>
+		<input type="number" id="12" value="0">
+		</th>
 	</tr>
 	<tr>
 		<th><script type="text/javascript">
 			document.write(monthNames[d.getMonth()-3]);
 		</script></th>
-		<th><form id="myform"><input type="number" id="num4">
-		</form></th>
+		<th><input type="number" id="13" value="0"><br>
+		<input type="number" id="14" value="0"><br>
+		<input type="number" id="15" value="0"><br>
+		<input type="number" id="16" value="0">
+		</th>
 	</tr>
 	<tr>
 		<th><script type="text/javascript"> 
 			document.write(monthNames[d.getMonth()-2]);
 		</script></th>
-		<th><form id="myform"><input type="number" id="num5">
-		</form></th>
+		<th><input type="number" id="17" value="0"><br>
+		<input type="number" id="18" value="0"><br>
+		<input type="number" id="19" value="0"><br>
+		<input type="number" id="20" value="0">
+		</th>
 	</tr>
 	<tr>
 		<th><script type="text/javascript"> 
 			document.write(monthNames[d.getMonth()-1]);
 		</script></th>
-		<th><form id="myform"><input type="number" id="num6">
-		</form></th>
+		<th><input type="number" id="21" value="0"><br>
+		<input type="number" id="22" value="0"><br>
+		<input type="number" id="23" value="0"><br>
+		<input type="number" id="24" value="0">
+		</th></form>
 	</tr>
 </table>
-	<input type="reset" name="reset" value="Išvalyti">
-	<button onclick="adder()"> Skaičiuoti</button><br>
-	<p>6 mėnesių pajamų vidurkis yra:<br> <p id="p1"></p></p>
+ 	<input type="button" onclick="myFunction()" value="Išvalyti">
+	<input type="button" onclick="adder()" value="Skaičiuoti"><br>
+	<p>6 mėnesių pajamų vidurkis yra:<br> <p id="summ"></p></p>
+
 </body>
 </html>
